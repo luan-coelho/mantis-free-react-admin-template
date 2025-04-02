@@ -1,24 +1,15 @@
 'use client'
 
 import { useMemo } from 'react'
-import componentsOverride from './overrides'
-// project imports
-import Palette from './palette'
-import CustomShadows from './shadows'
-import Typography from './typography'
-import CssBaseline from '@mui/material/CssBaseline'
-// material-ui
-import StyledEngineProvider from '@mui/material/StyledEngineProvider'
-import { createTheme, ThemeProvider } from '@mui/material/styles'
-import PropTypes from 'prop-types'
-import componentsOverride from './overrides'
-import Palette from './palette'
-import CustomShadows from './shadows'
-import Typography from './typography'
 import CssBaseline from '@mui/material/CssBaseline'
 import StyledEngineProvider from '@mui/material/StyledEngineProvider'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import PropTypes from 'prop-types'
+
+import componentsOverride from './overrides'
+import Palette from './palette'
+import CustomShadows from './shadows'
+import Typography from './typography'
 
 // ==============================|| DEFAULT THEME - MAIN ||============================== //
 

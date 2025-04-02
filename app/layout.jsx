@@ -1,7 +1,6 @@
 'use client'
 
 import ThemeCustomization from '../themes'
-import ThemeCustomization from '../themes'
 
 export default function RootLayout({ children }) {
     return (

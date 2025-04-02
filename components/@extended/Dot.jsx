@@ -3,11 +3,7 @@ import Box from '@mui/material/Box'
 import { useTheme } from '@mui/material/styles'
 import PropTypes from 'prop-types'
 // project imports
-import getColors from 'utils/getColors'
-import Box from '@mui/material/Box'
-import { useTheme } from '@mui/material/styles'
-import PropTypes from 'prop-types'
-import getColors from 'utils/getColors'
+import getColors from '../../utils/getColors'
 
 export default function Dot({ color, size, variant, sx }) {
     const theme = useTheme()

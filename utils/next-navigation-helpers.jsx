@@ -2,7 +2,7 @@
 
 import { useCallback } from 'react'
 import NextLink from 'next/link'
-import { useRouter, usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 
 // Função auxiliar para verificar se um link atual está ativo
 export function useActiveLink(path) {

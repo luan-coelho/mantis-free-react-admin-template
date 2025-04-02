@@ -1,12 +1,11 @@
 // material-ui
 // project imports
-import ThemeOption from './theme'
+
 // third-party
-import { presetDarkPalettes, presetPalettes } from '@ant-design/colors'
+import { presetPalettes } from '@ant-design/colors'
 import { createTheme } from '@mui/material/styles'
+
 import ThemeOption from './theme'
-import { presetDarkPalettes, presetPalettes } from '@ant-design/colors'
-import { createTheme } from '@mui/material/styles'
 
 // ==============================|| DEFAULT THEME - PALETTE ||============================== //
 

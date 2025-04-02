@@ -1,6 +1,5 @@
 import { useMemo } from 'react'
 import useSWR, { mutate } from 'swr'
-import useSWR, { mutate } from 'swr'
 
 const initialState = {
     isDashboardDrawerOpened: false,

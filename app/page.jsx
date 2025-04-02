@@ -2,7 +2,6 @@
 
 import { useRouter } from 'next/navigation'
 import { Box, Button, Stack, Typography } from '@mui/material'
-import { Box, Button, Stack, Typography } from '@mui/material'
 
 export default function Home() {
     const router = useRouter()

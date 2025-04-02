@@ -12,15 +12,6 @@ import Grid from '@mui/material/Grid2'
 import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
 import PropTypes from 'prop-types'
-import MainCard from '../../MainCard'
-import FallOutlined from '@ant-design/icons/FallOutlined'
-import RiseOutlined from '@ant-design/icons/RiseOutlined'
-import Box from '@mui/material/Box'
-import Chip from '@mui/material/Chip'
-import Grid from '@mui/material/Grid2'
-import Stack from '@mui/material/Stack'
-import Typography from '@mui/material/Typography'
-import PropTypes from 'prop-types'
 
 const iconSX = { fontSize: '0.75rem', color: 'inherit', marginLeft: 0, marginRight: 0 }
 

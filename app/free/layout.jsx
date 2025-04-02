@@ -1,63 +1,53 @@
 'use client'
 
-// style.scss
-import '../../assets/style.css'
-// apex-chart
-import '../../assets/third-party/apex-chart.css'
-import '../../assets/third-party/react-table.css'
-import ScrollTop from '../../components/ScrollTop'
-import DashboardLayout from '../../layout/Dashboard'
-// project imports
-import ThemeCustomization from '../../themes'
-import '@fontsource/inter/400.css'
-import '@fontsource/inter/500.css'
-import '@fontsource/inter/600.css'
-import '@fontsource/inter/700.css'
-import '@fontsource/poppins/400.css'
-import '@fontsource/poppins/500.css'
-import '@fontsource/poppins/600.css'
-import '@fontsource/poppins/700.css'
-import '@fontsource/public-sans/400.css'
-import '@fontsource/public-sans/500.css'
-import '@fontsource/public-sans/600.css'
-import '@fontsource/public-sans/700.css'
-import '@fontsource/roboto/300.css'
-// google-fonts
-import '@fontsource/roboto/400.css'
-import '@fontsource/roboto/500.css'
-import '@fontsource/roboto/700.css'
-// scroll bar
-import 'simplebar-react/dist/simplebar.min.css'
-import '../../assets/style.css'
-import '../../assets/third-party/apex-chart.css'
-import '../../assets/third-party/react-table.css'
-import ScrollTop from '../../components/ScrollTop'
-import DashboardLayout from '../../layout/Dashboard'
-import ThemeCustomization from '../../themes'
-import '@fontsource/inter/400.css'
-import '@fontsource/inter/500.css'
-import '@fontsource/inter/600.css'
-import '@fontsource/inter/700.css'
-import '@fontsource/poppins/400.css'
-import '@fontsource/poppins/500.css'
-import '@fontsource/poppins/600.css'
-import '@fontsource/poppins/700.css'
-import '@fontsource/public-sans/400.css'
-import '@fontsource/public-sans/500.css'
-import '@fontsource/public-sans/600.css'
-import '@fontsource/public-sans/700.css'
-import '@fontsource/roboto/300.css'
-import '@fontsource/roboto/400.css'
-import '@fontsource/roboto/500.css'
-import '@fontsource/roboto/700.css'
-import 'simplebar-react/dist/simplebar.min.css'
+import { useEffect } from 'react'
+import Box from '@mui/material/Box'
+import Toolbar from '@mui/material/Toolbar'
+import useMediaQuery from '@mui/material/useMediaQuery'
+import { useLocation } from 'react-router-dom'
 
-export default function FreeLayout({ children }) {
+import { handlerDrawerOpen, useGetMenuMaster } from '../../api/menu'
+// project imports
+import Breadcrumbs from '../../components/@extended/Breadcrumbs'
+import MainDrawer from '../../components/layout/Dashboard/Drawer'
+import Header from '../../components/layout/Dashboard/Header'
+import Loader from '../../components/Loader'
+import Footer from '../../layout/Dashboard/Footer'
+
+// ==============================|| MAIN LAYOUT ||============================== //
+
+export default function DashboardLayout({ children }) {
+    const { pathname } = useLocation()
+    const { menuMasterLoading } = useGetMenuMaster()
+    const downXL = useMediaQuery(theme => theme.breakpoints.down('xl'))
+
+    // set media wise responsive drawer
+    useEffect(() => {
+        handlerDrawerOpen(!downXL)
+    }, [downXL])
+
+    if (menuMasterLoading) return <Loader />
+
     return (
-        <ThemeCustomization>
-            <ScrollTop>
-                <DashboardLayout>{children}</DashboardLayout>
-            </ScrollTop>
-        </ThemeCustomization>
+        <Box sx={{ display: 'flex', width: '100%' }}>
+            <Header />
+            <MainDrawer />
+
+            <Box component="main" sx={{ width: 'calc(100% - 260px)', flexGrow: 1, p: { xs: 2, sm: 3 } }}>
+                <Toolbar sx={{ mt: 'inherit' }} />
+                <Box
+                    sx={{
+                        ...{ px: { xs: 0, sm: 2 } },
+                        position: 'relative',
+                        minHeight: 'calc(100vh - 110px)',
+                        display: 'flex',
+                        flexDirection: 'column',
+                    }}>
+                    {pathname !== '/apps/profiles/account/my-account' && <Breadcrumbs />}
+                    {children}
+                    <Footer />
+                </Box>
+            </Box>
+        </Box>
     )
 }

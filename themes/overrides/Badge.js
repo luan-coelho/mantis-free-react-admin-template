@@ -1,6 +1,5 @@
 // project imports
 import getColors from '../../utils/getColors'
-import getColors from '../../utils/getColors'
 
 // ==============================|| BADGE - COLORS ||============================== //
 

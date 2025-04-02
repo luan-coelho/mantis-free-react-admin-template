@@ -1,8 +1,6 @@
 // material-ui
 import Box from '@mui/material/Box'
 import LinearProgress from '@mui/material/LinearProgress'
-import Box from '@mui/material/Box'
-import LinearProgress from '@mui/material/LinearProgress'
 
 // ==============================|| Loader ||============================== //
 

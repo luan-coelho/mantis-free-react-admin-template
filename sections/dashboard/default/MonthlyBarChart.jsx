@@ -1,8 +1,6 @@
 // material-ui
 import { useTheme } from '@mui/material/styles'
 import { BarChart } from '@mui/x-charts/BarChart'
-import { useTheme } from '@mui/material/styles'
-import { BarChart } from '@mui/x-charts/BarChart'
 
 const data = [80, 95, 70, 42, 65, 55, 78]
 const xLabels = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su']

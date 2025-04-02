@@ -16,19 +16,6 @@ import Typography from '@mui/material/Typography'
 import PropTypes from 'prop-types'
 // third-party
 import { NumericFormat } from 'react-number-format'
-import Dot from '../../../components/@extended/Dot'
-import Box from '@mui/material/Box'
-import Link from '@mui/material/Link'
-import Stack from '@mui/material/Stack'
-import Table from '@mui/material/Table'
-import TableBody from '@mui/material/TableBody'
-import TableCell from '@mui/material/TableCell'
-import TableContainer from '@mui/material/TableContainer'
-import TableHead from '@mui/material/TableHead'
-import TableRow from '@mui/material/TableRow'
-import Typography from '@mui/material/Typography'
-import PropTypes from 'prop-types'
-import { NumericFormat } from 'react-number-format'
 
 function createData(tracking_no, name, fat, carbs, protein) {
     return { tracking_no, name, fat, carbs, protein }

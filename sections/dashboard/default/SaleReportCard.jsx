@@ -6,11 +6,6 @@ import Grid from '@mui/material/Grid2'
 import MenuItem from '@mui/material/MenuItem'
 import TextField from '@mui/material/TextField'
 import Typography from '@mui/material/Typography'
-import SalesChart from '../../../sections/dashboard/SalesChart'
-import Grid from '@mui/material/Grid2'
-import MenuItem from '@mui/material/MenuItem'
-import TextField from '@mui/material/TextField'
-import Typography from '@mui/material/Typography'
 
 // sales report status
 const status = [

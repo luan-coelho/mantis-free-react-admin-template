@@ -10,15 +10,6 @@ import Typography from '@mui/material/Typography'
 // material-ui
 import { alpha, useTheme } from '@mui/material/styles'
 import { BarChart } from '@mui/x-charts/BarChart'
-import MainCard from '../../components/MainCard'
-import Box from '@mui/material/Box'
-import Checkbox from '@mui/material/Checkbox'
-import FormControlLabel from '@mui/material/FormControlLabel'
-import FormGroup from '@mui/material/FormGroup'
-import Stack from '@mui/material/Stack'
-import Typography from '@mui/material/Typography'
-import { alpha, useTheme } from '@mui/material/styles'
-import { BarChart } from '@mui/x-charts/BarChart'
 
 // ==============================|| SALES COLUMN CHART ||============================== //
 

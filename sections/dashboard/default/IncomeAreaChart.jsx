@@ -6,12 +6,6 @@ import Typography from '@mui/material/Typography'
 import { alpha, useTheme } from '@mui/material/styles'
 import { LineChart } from '@mui/x-charts/LineChart'
 import PropTypes from 'prop-types'
-import Box from '@mui/material/Box'
-import Stack from '@mui/material/Stack'
-import Typography from '@mui/material/Typography'
-import { alpha, useTheme } from '@mui/material/styles'
-import { LineChart } from '@mui/x-charts/LineChart'
-import PropTypes from 'prop-types'
 
 // Sample data
 const monthlyLabels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
