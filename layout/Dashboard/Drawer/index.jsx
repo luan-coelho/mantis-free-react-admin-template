@@ -1,27 +1,18 @@
 'use client'
 
 import { useMemo } from 'react'
+import Box from '@mui/material/Box'
+import Drawer from '@mui/material/Drawer'
+import { useTheme } from '@mui/material/styles'
+import useMediaQuery from '@mui/material/useMediaQuery'
+import PropTypes from 'prop-types'
+
 import { handlerDrawerOpen, useGetMenuMaster } from '../../../api/menu'
 import { DRAWER_WIDTH } from '../../../config'
 import DrawerContent from './DrawerContent'
 // project imports
 import DrawerHeader from './DrawerHeader'
 import MiniDrawerStyled from './MiniDrawerStyled'
-import Box from '@mui/material/Box'
-import Drawer from '@mui/material/Drawer'
-import { useTheme } from '@mui/material/styles'
-import useMediaQuery from '@mui/material/useMediaQuery'
-import PropTypes from 'prop-types'
-import { handlerDrawerOpen, useGetMenuMaster } from '../../../api/menu'
-import { DRAWER_WIDTH } from '../../../config'
-import DrawerContent from './DrawerContent'
-import DrawerHeader from './DrawerHeader'
-import MiniDrawerStyled from './MiniDrawerStyled'
-import Box from '@mui/material/Box'
-import Drawer from '@mui/material/Drawer'
-import { useTheme } from '@mui/material/styles'
-import useMediaQuery from '@mui/material/useMediaQuery'
-import PropTypes from 'prop-types'
 
 // ==============================|| MAIN LAYOUT - DRAWER ||============================== //
 

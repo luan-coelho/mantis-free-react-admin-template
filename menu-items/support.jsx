@@ -1,6 +1,5 @@
 // assets
 import { ChromeOutlined, QuestionOutlined } from '@ant-design/icons'
-import { ChromeOutlined, QuestionOutlined } from '@ant-design/icons'
 
 // icons
 const icons = {

@@ -1,10 +1,12 @@
 // project imports
-import getColors from '../../utils/getColors'
+
 // assets
 import BorderOutlined from '@ant-design/icons/BorderOutlined'
 import CheckSquareFilled from '@ant-design/icons/CheckSquareFilled'
 import MinusSquareFilled from '@ant-design/icons/MinusSquareFilled'
 import PropTypes from 'prop-types'
+
+import getColors from '../../utils/getColors'
 
 // ==============================|| RADIO - COLORS ||============================== //
 

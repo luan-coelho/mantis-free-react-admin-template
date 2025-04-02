@@ -1,7 +1,6 @@
 'use client'
 
 // project imports
-import Dot from '../../../components/@extended/Dot'
 import Box from '@mui/material/Box'
 // material-ui
 import Link from '@mui/material/Link'
@@ -16,6 +15,8 @@ import Typography from '@mui/material/Typography'
 import PropTypes from 'prop-types'
 // third-party
 import { NumericFormat } from 'react-number-format'
+
+import Dot from '../../../components/@extended/Dot'
 
 function createData(tracking_no, name, fat, carbs, protein) {
     return { tracking_no, name, fat, carbs, protein }

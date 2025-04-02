@@ -2,9 +2,9 @@ import Box from '@mui/material/Box'
 // material-ui
 import List from '@mui/material/List'
 import Typography from '@mui/material/Typography'
-import { useGetMenuMaster } from 'api/menu'
 import PropTypes from 'prop-types'
 
+import { useGetMenuMaster } from '../../../../../../api/menu'
 // project import
 import NavItem from './NavItem'
 

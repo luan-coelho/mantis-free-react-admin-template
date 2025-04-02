@@ -1,7 +1,6 @@
 'use client'
 
 // project imports
-import MainCard from '../../MainCard'
 import FallOutlined from '@ant-design/icons/FallOutlined'
 // assets
 import RiseOutlined from '@ant-design/icons/RiseOutlined'
@@ -12,6 +11,8 @@ import Grid from '@mui/material/Grid2'
 import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
 import PropTypes from 'prop-types'
+
+import MainCard from '../../MainCard'
 
 const iconSX = { fontSize: '0.75rem', color: 'inherit', marginLeft: 0, marginRight: 0 }
 

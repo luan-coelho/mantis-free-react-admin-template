@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import Box from '@mui/material/Box'
 import Stack from '@mui/material/Stack'
-import Typography from '@mui/material/Typography'
 // material-ui
 import { alpha, useTheme } from '@mui/material/styles'
+import Typography from '@mui/material/Typography'
 import { LineChart } from '@mui/x-charts/LineChart'
 import PropTypes from 'prop-types'
 

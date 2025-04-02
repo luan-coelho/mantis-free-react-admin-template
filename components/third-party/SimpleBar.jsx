@@ -1,14 +1,11 @@
+'use client'
+
 import Box from '@mui/material/Box'
 // material-ui
 import { alpha, styled, useTheme } from '@mui/material/styles'
 import PropTypes from 'prop-types'
 import { BrowserView, MobileView } from 'react-device-detect'
 // third-party
-import SimpleBar from 'simplebar-react'
-import Box from '@mui/material/Box'
-import { alpha, styled, useTheme } from '@mui/material/styles'
-import PropTypes from 'prop-types'
-import { BrowserView, MobileView } from 'react-device-detect'
 import SimpleBar from 'simplebar-react'
 
 // root style

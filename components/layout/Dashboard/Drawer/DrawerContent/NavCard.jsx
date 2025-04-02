@@ -4,11 +4,12 @@ import CardMedia from '@mui/material/CardMedia'
 import Link from '@mui/material/Link'
 import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
+
 // assets
-import avatar from 'assets/images/users/avatar-group.png'
-import AnimateButton from 'components/@extended/AnimateButton'
+import avatar from '../../../../../assets/images/users/avatar-group.png'
 // project import
-import MainCard from 'components/MainCard'
+import AnimateButton from '../../../../@extended/AnimateButton'
+import MainCard from '../../../../MainCard'
 
 // ==============================|| DRAWER CONTENT - NAVIGATION CARD ||============================== //
 

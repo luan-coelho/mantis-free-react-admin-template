@@ -2,6 +2,7 @@ import Box from '@mui/material/Box'
 // material-ui
 import { useTheme } from '@mui/material/styles'
 import PropTypes from 'prop-types'
+
 // project imports
 import getColors from '../../utils/getColors'
 

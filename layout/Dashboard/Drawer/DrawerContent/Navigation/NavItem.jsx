@@ -3,32 +3,21 @@
 import { useCallback } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { handlerDrawerOpen, useGetMenuMaster } from '../../../../../api/menu'
-// project imports
-import IconButton from '../../../../../components/@extended/IconButton'
 import Avatar from '@mui/material/Avatar'
 import Box from '@mui/material/Box'
 import Chip from '@mui/material/Chip'
 import ListItemButton from '@mui/material/ListItemButton'
 import ListItemIcon from '@mui/material/ListItemIcon'
 import ListItemText from '@mui/material/ListItemText'
-import Typography from '@mui/material/Typography'
 // material-ui
 import { useTheme } from '@mui/material/styles'
-import useMediaQuery from '@mui/material/useMediaQuery'
-import PropTypes from 'prop-types'
-import { handlerDrawerOpen, useGetMenuMaster } from '../../../../../api/menu'
-import IconButton from '../../../../../components/@extended/IconButton'
-import Avatar from '@mui/material/Avatar'
-import Box from '@mui/material/Box'
-import Chip from '@mui/material/Chip'
-import ListItemButton from '@mui/material/ListItemButton'
-import ListItemIcon from '@mui/material/ListItemIcon'
-import ListItemText from '@mui/material/ListItemText'
 import Typography from '@mui/material/Typography'
-import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import PropTypes from 'prop-types'
+
+// project imports
+import IconButton from '../../../../../../components/@extended/IconButton'
+import { handlerDrawerOpen, useGetMenuMaster } from '../../../../../api/menu'
 
 // ==============================|| NAVIGATION - LIST ITEM ||============================== //
 

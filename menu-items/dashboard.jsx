@@ -1,6 +1,5 @@
 // assets
 import { DashboardOutlined } from '@ant-design/icons'
-import { DashboardOutlined } from '@ant-design/icons'
 
 // icons
 const icons = {

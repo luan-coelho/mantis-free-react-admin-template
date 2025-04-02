@@ -3,14 +3,11 @@ import { forwardRef } from 'react'
 import MuiIconButton from '@mui/material/IconButton'
 import { alpha, styled } from '@mui/material/styles'
 import PropTypes from 'prop-types'
+
+import getColors from '../../utils/getColors'
+import getShadow from '../../utils/getShadow'
+
 // project imports
-import getColors from 'utils/getColors'
-import getShadow from 'utils/getShadow'
-import MuiIconButton from '@mui/material/IconButton'
-import { alpha, styled } from '@mui/material/styles'
-import PropTypes from 'prop-types'
-import getColors from 'utils/getColors'
-import getShadow from 'utils/getShadow'
 
 function getColorStyle({ variant, theme, color }) {
     const colors = getColors(theme, color)

@@ -1,19 +1,14 @@
 'use client'
 
-import { useGetMenuMaster } from '../../../../../api/menu'
-// project import
-import NavItem from './NavItem'
 import Box from '@mui/material/Box'
 // material-ui
 import List from '@mui/material/List'
 import Typography from '@mui/material/Typography'
 import PropTypes from 'prop-types'
+
 import { useGetMenuMaster } from '../../../../../api/menu'
+// project import
 import NavItem from './NavItem'
-import Box from '@mui/material/Box'
-import List from '@mui/material/List'
-import Typography from '@mui/material/Typography'
-import PropTypes from 'prop-types'
 
 export default function NavGroup({ item }) {
     const { menuMaster } = useGetMenuMaster()
