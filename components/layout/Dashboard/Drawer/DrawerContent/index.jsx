@@ -11,13 +11,13 @@ import Navigation from './Navigation'
 // ==============================|| DRAWER CONTENT ||============================== //
 
 export default function DrawerContent() {
-    const { menuMaster } = useGetMenuMaster()
-    const drawerOpen = menuMaster.isDashboardDrawerOpened
+  const { menuMaster } = useGetMenuMaster()
+  const drawerOpen = menuMaster.isDashboardDrawerOpened
 
-    return (
-        <SimpleBar sx={{ '& .simplebar-content': { display: 'flex', flexDirection: 'column' } }}>
-            <Navigation />
-            {drawerOpen && <NavCard />}
-        </SimpleBar>
-    )
+  return (
+    <SimpleBar sx={{ '& .simplebar-content': { display: 'flex', flexDirection: 'column' } }}>
+      <Navigation />
+      {drawerOpen && <NavCard />}
+    </SimpleBar>
+  )
 }

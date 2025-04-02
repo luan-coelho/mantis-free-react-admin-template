@@ -17,60 +17,60 @@ import HeaderContent from './HeaderContent'
 // ==============================|| MAIN LAYOUT - HEADER ||============================== //
 
 export default function Header() {
-    const downLG = useMediaQuery(theme => theme.breakpoints.down('lg'))
+  const downLG = useMediaQuery(theme => theme.breakpoints.down('lg'))
 
-    const { menuMaster } = useGetMenuMaster()
-    const drawerOpen = menuMaster.isDashboardDrawerOpened
+  const { menuMaster } = useGetMenuMaster()
+  const drawerOpen = menuMaster.isDashboardDrawerOpened
 
-    // header content
-    const headerContent = useMemo(() => <HeaderContent />, [])
+  // header content
+  const headerContent = useMemo(() => <HeaderContent />, [])
 
-    // common header
-    const mainHeader = (
-        <Toolbar>
-            <IconButton
-                aria-label="open drawer"
-                onClick={() => handlerDrawerOpen(!drawerOpen)}
-                edge="start"
-                color="secondary"
-                variant="light"
-                sx={theme => ({
-                    color: 'text.primary',
-                    bgcolor: drawerOpen ? 'transparent' : 'grey.100',
-                    ...theme.applyStyles('dark', { bgcolor: drawerOpen ? 'transparent' : 'background.default' }),
-                    ml: { xs: 0, lg: -2 },
-                })}>
-                {!drawerOpen ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-            </IconButton>
-            {headerContent}
-        </Toolbar>
-    )
+  // common header
+  const mainHeader = (
+    <Toolbar>
+      <IconButton
+        aria-label="open drawer"
+        onClick={() => handlerDrawerOpen(!drawerOpen)}
+        edge="start"
+        color="secondary"
+        variant="light"
+        sx={theme => ({
+          color: 'text.primary',
+          bgcolor: drawerOpen ? 'transparent' : 'grey.100',
+          ...theme.applyStyles('dark', { bgcolor: drawerOpen ? 'transparent' : 'background.default' }),
+          ml: { xs: 0, lg: -2 }
+        })}>
+        {!drawerOpen ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+      </IconButton>
+      {headerContent}
+    </Toolbar>
+  )
 
-    // app-bar params
-    const appBar = {
-        position: 'fixed',
-        color: 'inherit',
-        elevation: 0,
-        sx: {
-            borderBottom: '1px solid',
-            borderBottomColor: 'divider',
-            zIndex: 1200,
-            width: {
-                xs: '100%',
-                lg: drawerOpen ? `calc(100% - ${DRAWER_WIDTH}px)` : `calc(100% - ${MINI_DRAWER_WIDTH}px)`,
-            },
-        },
+  // app-bar params
+  const appBar = {
+    position: 'fixed',
+    color: 'inherit',
+    elevation: 0,
+    sx: {
+      borderBottom: '1px solid',
+      borderBottomColor: 'divider',
+      zIndex: 1200,
+      width: {
+        xs: '100%',
+        lg: drawerOpen ? `calc(100% - ${DRAWER_WIDTH}px)` : `calc(100% - ${MINI_DRAWER_WIDTH}px)`
+      }
     }
+  }
 
-    return (
-        <>
-            {!downLG ? (
-                <AppBarStyled open={drawerOpen} {...appBar}>
-                    {mainHeader}
-                </AppBarStyled>
-            ) : (
-                <AppBar {...appBar}>{mainHeader}</AppBar>
-            )}
-        </>
-    )
+  return (
+    <>
+      {!downLG ? (
+        <AppBarStyled open={drawerOpen} {...appBar}>
+          {mainHeader}
+        </AppBarStyled>
+      ) : (
+        <AppBar {...appBar}>{mainHeader}</AppBar>
+      )}
+    </>
+  )
 }

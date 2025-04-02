@@ -12,11 +12,11 @@ import Logo from './LogoMain'
 // ==============================|| MAIN LOGO ||============================== //
 
 export default function LogoSection({ reverse, isIcon, sx, to }) {
-    return (
-        <ButtonBase disableRipple component={Link} href={to || '/'} sx={sx}>
-            {isIcon ? <LogoIcon /> : <Logo reverse={reverse} />}
-        </ButtonBase>
-    )
+  return (
+    <ButtonBase disableRipple component={Link} href={to || '/'} sx={sx}>
+      {isIcon ? <LogoIcon /> : <Logo reverse={reverse} />}
+    </ButtonBase>
+  )
 }
 
 LogoSection.propTypes = { reverse: PropTypes.bool, isIcon: PropTypes.bool, sx: PropTypes.any, to: PropTypes.any }

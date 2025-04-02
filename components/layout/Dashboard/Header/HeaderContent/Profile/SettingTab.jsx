@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from 'react'
 // assets
 import CommentOutlined from '@ant-design/icons/CommentOutlined'
@@ -11,19 +13,19 @@ import List from '@mui/material/List'
 import ListItemButton from '@mui/material/ListItemButton'
 import ListItemIcon from '@mui/material/ListItemIcon'
 import ListItemText from '@mui/material/ListItemText'
-import { useNavigate } from 'react-router'
+import { useRouter } from 'next/navigation'
 
 // ==============================|| HEADER PROFILE - SETTING TAB ||============================== //
 
 export default function SettingTab() {
-    const navigate = useNavigate()
+    const router = useRouter()
     const [selectedIndex, setSelectedIndex] = useState(0)
 
     const handleListItemClick = (event, index, route = '') => {
         setSelectedIndex(index)
 
         if (route && route !== '') {
-            navigate(route)
+            router.push(route)
         }
     }
 
