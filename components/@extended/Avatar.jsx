@@ -4,10 +4,6 @@ import { styled } from '@mui/material/styles'
 import PropTypes from 'prop-types'
 // project imports
 import getColors from 'utils/getColors'
-import MuiAvatar from '@mui/material/Avatar'
-import { styled } from '@mui/material/styles'
-import PropTypes from 'prop-types'
-import getColors from 'utils/getColors'
 
 function getColorStyle({ theme, color, type }) {
     const colors = getColors(theme, color)

@@ -4,10 +4,6 @@ import NavGroup from './NavGroup'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import menuItem from 'menu-items'
-import NavGroup from './NavGroup'
-import Box from '@mui/material/Box'
-import Typography from '@mui/material/Typography'
-import menuItem from 'menu-items'
 
 // ==============================|| DRAWER CONTENT - NAVIGATION ||============================== //
 

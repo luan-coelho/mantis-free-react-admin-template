@@ -7,13 +7,6 @@ import Grow from '@mui/material/Grow'
 import Slide from '@mui/material/Slide'
 import Zoom from '@mui/material/Zoom'
 import PropTypes from 'prop-types'
-import Box from '@mui/material/Box'
-import Collapse from '@mui/material/Collapse'
-import Fade from '@mui/material/Fade'
-import Grow from '@mui/material/Grow'
-import Slide from '@mui/material/Slide'
-import Zoom from '@mui/material/Zoom'
-import PropTypes from 'prop-types'
 
 function transitions({ children, position = 'top-left', type = 'grow', direction = 'up', ...others }, ref) {
     let positionSX = {
@@ -113,6 +106,7 @@ export default forwardRef(transitions)
 function popupTransition(props, ref) {
     return <Zoom ref={ref} timeout={200} {...props} />
 }
+
 export const PopupTransition = forwardRef(popupTransition)
 
 transitions.propTypes = {

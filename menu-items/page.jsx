@@ -1,6 +1,5 @@
 // assets
 import { LoginOutlined, ProfileOutlined } from '@ant-design/icons'
-import { LoginOutlined, ProfileOutlined } from '@ant-design/icons'
 
 // icons
 const icons = {
