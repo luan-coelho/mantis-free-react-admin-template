@@ -1,23 +1,23 @@
 'use client'
 
-import { useEffect } from 'react'
 import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar'
 import useMediaQuery from '@mui/material/useMediaQuery'
-import { useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 
 import { handlerDrawerOpen, useGetMenuMaster } from '../../api/menu'
 // project imports
+import { usePathname } from 'next/navigation'
 import Breadcrumbs from '../../components/@extended/Breadcrumbs'
 import MainDrawer from '../../components/layout/Dashboard/Drawer'
+import Footer from '../../components/layout/Dashboard/Footer'
 import Header from '../../components/layout/Dashboard/Header'
 import Loader from '../../components/Loader'
-import Footer from '../../layout/Dashboard/Footer'
 
 // ==============================|| MAIN LAYOUT ||============================== //
 
 export default function DashboardLayout({ children }) {
-    const { pathname } = useLocation()
+    const pathname = usePathname()
     const { menuMasterLoading } = useGetMenuMaster()
     const downXL = useMediaQuery(theme => theme.breakpoints.down('xl'))
 

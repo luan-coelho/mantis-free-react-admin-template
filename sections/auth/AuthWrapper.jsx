@@ -8,13 +8,6 @@ import Grid from '@mui/material/Grid2'
 import AuthFooter from 'components/cards/AuthFooter'
 import Logo from 'components/logo'
 import PropTypes from 'prop-types'
-import AuthBackground from './AuthBackground'
-import AuthCard from './AuthCard'
-import Box from '@mui/material/Box'
-import Grid from '@mui/material/Grid2'
-import AuthFooter from 'components/cards/AuthFooter'
-import Logo from 'components/logo'
-import PropTypes from 'prop-types'
 
 // ==============================|| AUTHENTICATION - WRAPPER ||============================== //
 

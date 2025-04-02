@@ -127,7 +127,7 @@ export default function Breadcrumbs({
             </Typography>
         )
 
-        if (!!custom) {
+        if (custom) {
             breadcrumbContent = (
                 <MainCard
                     border={card}

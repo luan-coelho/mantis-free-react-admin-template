@@ -21,23 +21,6 @@ import { Formik } from 'formik'
 import PropTypes from 'prop-types'
 // third-party
 import * as Yup from 'yup'
-import EyeInvisibleOutlined from '@ant-design/icons/EyeInvisibleOutlined'
-import EyeOutlined from '@ant-design/icons/EyeOutlined'
-import Button from '@mui/material/Button'
-import Checkbox from '@mui/material/Checkbox'
-import FormControlLabel from '@mui/material/FormControlLabel'
-import FormHelperText from '@mui/material/FormHelperText'
-import Grid from '@mui/material/Grid2'
-import InputAdornment from '@mui/material/InputAdornment'
-import InputLabel from '@mui/material/InputLabel'
-import OutlinedInput from '@mui/material/OutlinedInput'
-import Stack from '@mui/material/Stack'
-import Typography from '@mui/material/Typography'
-import AnimateButton from 'components/@extended/AnimateButton'
-import IconButton from 'components/@extended/IconButton'
-import { Formik } from 'formik'
-import PropTypes from 'prop-types'
-import * as Yup from 'yup'
 
 // ============================|| JWT - LOGIN ||============================ //
 

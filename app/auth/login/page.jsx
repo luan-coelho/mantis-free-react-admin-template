@@ -2,17 +2,12 @@
 
 import Link from 'next/link'
 // project imports
-import AuthLogin from '../../../sections/auth/AuthLogin'
 import AuthWrapper from '../../../sections/auth/AuthWrapper'
 // material-ui
 import Grid from '@mui/material/Grid2'
 import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
 import AuthLogin from '../../../sections/auth/AuthLogin'
-import AuthWrapper from '../../../sections/auth/AuthWrapper'
-import Grid from '@mui/material/Grid2'
-import Stack from '@mui/material/Stack'
-import Typography from '@mui/material/Typography'
 
 // ================================|| JWT - LOGIN ||================================ //
 

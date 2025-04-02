@@ -8,10 +8,12 @@ import Typography from '@mui/material/Typography'
 // material-ui
 import useMediaQuery from '@mui/material/useMediaQuery'
 import PropTypes from 'prop-types'
-import { Link, matchPath, useLocation } from 'react-router-dom'
+import { matchPath } from 'react-router-dom'
 
 import { handlerDrawerOpen, useGetMenuMaster } from '../../../../../../api/menu'
 // project imports
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import IconButton from '../../../../../../components/@extended/IconButton'
 
 // ==============================|| NAVIGATION - LIST ITEM ||============================== //
@@ -47,7 +49,7 @@ export default function NavItem({ item, level, isParents = false, setSelectedID 
         false
     )
 
-    const { pathname } = useLocation()
+    const pathname = usePathname()
     const isSelected = !!matchPath({ path: item?.link ? item.link : item.url, end: false }, pathname)
 
     const textColor = 'text.primary'
@@ -154,7 +156,7 @@ export default function NavItem({ item, level, isParents = false, setSelectedID 
                                 })}
                                 {...(action.type === 'link' && {
                                     component: Link,
-                                    to: action.url,
+                                    href: action.url,
                                     target: action.target ? '_blank' : '_self',
                                 })}
                                 color="secondary"

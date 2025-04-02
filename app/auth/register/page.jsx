@@ -8,11 +8,6 @@ import Typography from '@mui/material/Typography'
 import FirebaseRegister from 'sections/auth/AuthRegister'
 // project imports
 import AuthWrapper from 'sections/auth/AuthWrapper'
-import Grid from '@mui/material/Grid2'
-import Stack from '@mui/material/Stack'
-import Typography from '@mui/material/Typography'
-import FirebaseRegister from 'sections/auth/AuthRegister'
-import AuthWrapper from 'sections/auth/AuthWrapper'
 
 // ================================|| JWT - REGISTER ||================================ //
 

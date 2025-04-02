@@ -22,23 +22,6 @@ import { Formik } from 'formik'
 import { strengthColor, strengthIndicator } from 'utils/password-strength'
 // third-party
 import * as Yup from 'yup'
-import EyeInvisibleOutlined from '@ant-design/icons/EyeInvisibleOutlined'
-import EyeOutlined from '@ant-design/icons/EyeOutlined'
-import Box from '@mui/material/Box'
-import Button from '@mui/material/Button'
-import FormControl from '@mui/material/FormControl'
-import FormHelperText from '@mui/material/FormHelperText'
-import Grid from '@mui/material/Grid2'
-import InputAdornment from '@mui/material/InputAdornment'
-import InputLabel from '@mui/material/InputLabel'
-import OutlinedInput from '@mui/material/OutlinedInput'
-import Stack from '@mui/material/Stack'
-import Typography from '@mui/material/Typography'
-import AnimateButton from 'components/@extended/AnimateButton'
-import IconButton from 'components/@extended/IconButton'
-import { Formik } from 'formik'
-import { strengthColor, strengthIndicator } from 'utils/password-strength'
-import * as Yup from 'yup'
 
 // ============================|| JWT - REGISTER ||============================ //
 
